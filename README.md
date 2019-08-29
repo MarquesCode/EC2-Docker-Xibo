@@ -1,4 +1,4 @@
-# Pojeto Integrador III
+# Projeto Integrador III
 # Pipeline de entrega continua de infraestrutura na AWS.
 Repositório da disciplina projeto integrador III.
 
@@ -26,7 +26,7 @@ O projeto consiste na criação de um pipeline de entrega contínua de infraestr
 Siga o passo a passo da documentação oficial - https://docs.aws.amazon.com/pt_br/IAM/latest/UserGuide/id_credentials_access-keys.html
 
 # Configurando o Jenkins
-- Após a instalação do servidor jenkins será necessários fazer alguns ajustes. Para que o jenkins acesse a aws é necessário salvar o access_key, secret_key e region em um arquivo chamado provider.tf, também é preciso salvar essas informaçções em váriavel e depois exportar-la para todo sistema operacional do servidor jenkins.
+- Após a instalação do servidor jenkins será necessários fazer alguns ajustes. Para que o jenkins acesse a aws é necessário salvar o access_key, secret_key e region em um arquivo chamado provider.tf, também é preciso salvar essas informações em váriavel e depois exportar-la para todo sistema operacional do servidor jenkins.
 - Faça acesso ssh a maquina do jenkins e crie o arquivo provider.tf no diretorio /var/lib/jenkins/workspaces/diretorio_projeto
 - Depois exporte as variaveis.
 
