@@ -10,7 +10,7 @@
       when: "ansible_os_family == \"Debian\""
     - name: "Atualização debian"
       apt: 
-        upgrade=dist
+        upgrade: dist
         force_apt_get: yes
         become: yes
       when: "ansible_os_family == \"Debian\""
