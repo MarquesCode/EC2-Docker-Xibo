@@ -4,14 +4,14 @@
   tasks: 
     - 
       apt: 
-        - update_cache=yes
-        - force_apt_get=yes
+        update_cache=yes
+        force_apt_get=yes
       name: "Atualização de repo debian"
       when: "ansible_os_family == \"Debian\""
     - 
       apt: 
-        - upgrade=dist
-        - force_apt_get=yes
+        upgrade=dist
+        force_apt_get=yes
       name: "Atualização debian"
       when: "ansible_os_family == \"Debian\""
     - 
