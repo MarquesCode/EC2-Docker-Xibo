@@ -2,7 +2,7 @@ version: "3"
 
 services:
   web:
-    image: empresa_web
+    image: carlosviniciusm/empresa_tcc:empresa_web
     hostname: "apache2"
     container_name: 'empresa'
     build: ./apache2
@@ -13,7 +13,7 @@ services:
     links:
       - mysql
   mysql:
-    image: empresa_mysql
+    image: carlosviniciusm/empresa_tcc:empresa_mysql
     hostname: "mysql:5.7"
     container_name: 'empresa_mysql'
     build: ./mysql
